@@ -2,7 +2,7 @@
  * Theme Name: Retro-fitted
  * Theme URI: http://themehybrid.com/themes/retro-fitted
  * Description: An elegantly-designed parent theme with multiple nav menus, several sidebars, custom widgets, a smart breadcrumb trail, and per-post layouts.
- * Version: 0.1
+ * Version: 0.1 Beta
  * Author: Justin Tadlock
  * Author URI: http://justintadlock.com
  * Tags: theme-options, threaded-comments, microformats, translation-ready, rtl-language-support, one-column, two-columns, three-columns, fixed-width
@@ -13,4 +13,4 @@
  * http://justintadlock.com
  */
 
-@import( 'style.dev.css' );
+@import url( 'style.dev.css' );

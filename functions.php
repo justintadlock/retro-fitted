@@ -142,14 +142,14 @@ function retro_fitted_next_comments_link_attributes( $attributes ) {
 function retro_fitted_one_column() {
 
 	if ( !is_active_sidebar( 'primary' ) && !is_active_sidebar( 'secondary' ) )
-		add_filter( 'get_post_layout', 'retro_fitted_theme_layout_one_column' );
+		add_filter( 'get_theme_layout', 'retro_fitted_theme_layout_one_column' );
 
 	elseif ( is_attachment() )
-		add_filter( 'get_post_layout', 'retro_fitted_theme_layout_one_column' );
+		add_filter( 'get_theme_layout', 'retro_fitted_theme_layout_one_column' );
 }
 
 /**
- * Filters 'get_post_layout' by returning 'layout-1c'.
+ * Filters 'get_theme_layout' by returning 'layout-1c'.
  *
  * @since 0.1.0
  */
@@ -165,9 +165,9 @@ function retro_fitted_theme_layout_one_column( $layout ) {
 function retro_fitted_disable_sidebars( $sidebars_widgets ) {
 	global $wp_query;
 
-	if ( current_theme_supports( 'post-layouts' ) ) {
+	if ( current_theme_supports( 'theme-layouts' ) ) {
 
-		if ( 'layout-1c' == post_layouts_get_layout() ) {
+		if ( 'layout-1c' == theme_layouts_get_layout() ) {
 			$sidebars_widgets['primary'] = false;
 			$sidebars_widgets['secondary'] = false;
 		}
@@ -195,9 +195,9 @@ function retro_fitted_comment_form_args( $args ) {
  */
 function retro_fitted_embed_defaults( $args ) {
 
-	if ( current_theme_supports( 'post-layouts' ) ) {
+	if ( current_theme_supports( 'theme-layouts' ) ) {
 
-		$layout = post_layouts_get_layout();
+		$layout = theme_layouts_get_layout();
 
 		if ( 'layout-3c-l' == $layout || 'layout-3c-r' == $layout || 'layout-3c-c' == $layout )
 			$args['width'] = 470;
