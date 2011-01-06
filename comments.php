@@ -44,7 +44,6 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 
 				<?php do_atomic( 'after_comment_list' ); // retro-fitted_after_comment_list ?>
 
-
 			<?php endif; ?>
 
 			<?php if ( pings_open() && !comments_open() ) : ?>
