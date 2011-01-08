@@ -23,8 +23,6 @@
 
 		<?php do_atomic( 'after_main' ); // retro-fitted_after_main ?>
 
-		<?php get_template_part( 'menu', 'subsidiary' ); // Loads the menu-subsidiary.php template. ?>
-
 		<?php do_atomic( 'before_footer' ); // retro-fitted_before_footer ?>
 
 		<div id="footer">
