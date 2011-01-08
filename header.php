@@ -64,3 +64,5 @@
 			<div class="wrap">
 
 			<?php do_atomic( 'open_main' ); // retro-fitted_open_main ?>
+
+			<?php if ( current_theme_supports( 'breadcrumb-trail' ) ) breadcrumb_trail(); ?>

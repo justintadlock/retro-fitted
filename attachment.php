@@ -54,13 +54,30 @@ get_header(); // Loads the header.php template. ?>
 							<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', hybrid_get_textdomain() ), 'after' => '</p>' ) ); ?>
 						</div><!-- .entry-content -->
 
-						<?php if ( wp_attachment_is_image( get_the_ID() ) ) echo do_shortcode( sprintf( '[gallery id="%1$s" exclude="%2$s" columns="8"]', $post->post_parent, get_the_ID() ) ); ?>
-
 						<?php do_atomic( 'close_entry' ); // retro-fitted_close_entry ?>
 
 					</div><!-- .hentry -->
 
 					<?php do_atomic( 'after_entry' ); // retro-fitted_after_entry ?>
+
+					<?php if ( wp_attachment_is_image( get_the_ID() ) ) { // Only show attachment meta for images for now. ?>
+
+						<div class="attachment-meta">
+
+							<?php retro_fitted_image_info(); ?>
+
+							<?php $gallery = do_shortcode( sprintf( '[gallery id="%1$s" exclude="%2$s" columns="7"]', $post->post_parent, get_the_ID() ) ); ?>
+
+							<?php if ( !empty( $gallery ) ) { ?>
+								<div class="image-gallery">
+									<h3><?php _e( 'Gallery', hybrid_get_textdomain() ); ?></h3>
+									<?php echo $gallery; ?>
+								</div>
+							<?php } ?>
+
+						</div><!-- .attachment-meta -->
+
+					<?php } ?>
 
 					<?php get_sidebar( 'after-singular' ); // Loads the sidebar-after-singular.php template. ?>
 

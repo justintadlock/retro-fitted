@@ -7,7 +7,7 @@
  */
 
 /* 25px reset. */
-html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;vertical-align:baseline;outline:none;font-size:100%;background:transparent;border:none;text-decoration:none}b,i,hr,u,center,menu,layer,s,strike,font,xmp{margin:0;padding:0;vertical-align:baseline;outline:none;font-size:100%;font-weight:normal;font-style:normal;background:transparent;border:none;text-decoration:none}font{color:#333}center{text-align:left}body{line-height:25px;font-family:Georgia,Times,"Times New Roman",serif;color:#333;background:#fff}h1,h2,h3,h4,h5,h6{font-style:normal;font-weight:normal;margin:0 0 25px 0}h1{font-size:1.8em}h2{font-size:1.7em}h3{font-size:1.55em;}h4{font-size:1.4em}h5{font-size:1.25em}h6{font-size:1.1em}p{margin:0 0 25px 0}ol,ul{list-style:none}ul{list-style:disc;margin:0 0 25px 2.5em}ol{list-style-type:decimal;margin:0 0 25px 3em}ol ol{list-style:upper-roman}ol ol ol{list-style:lower-roman}ol ol ol ol{list-style:upper-alpha}ol ol ol ol ol{list-style:lower-alpha}ul ul,ol ol,ul ol,ol ul{margin-bottom:0}dl{margin:0 0 25px 5px}dl dt{font-weight:bold;margin:10px 0 0 0}dl dd{margin:5px 0 0 1.5em}strong{font-weight:bold}strong strong{font-weight:normal}em,cite{font-style:italic}em em,cite cite{font-style:normal}abbr{cursor:help}acronym{text-transform:uppercase;border-bottom:1px dashed #666;cursor:help}big{font-size:120%}small,sup,sub{font-size:80%}sup{vertical-align:baseline;position:relative;bottom:0.3em}sub{vertical-align:baseline;position:relative;top:0.3em}address{font-style:italic;margin:0 0 25px 0}li address,dd address{margin:0}blockquote{margin:0 25px;font-style:normal}blockquote em,blockquote cite{font-style:italic}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{cursor:pointer}a img{border:none}pre{overflow:auto;font:.9em Monaco,monospace,Courier,"Courier New";line-height:25px;margin-bottom:25px;padding:10px}code{font:.9em Monaco,monospace,Courier,"Courier New"}pre code{font-size:1em}ins,dfn{font-style:italic;text-decoration:none;border-bottom:1px solid #666}del{text-decoration:line-through}object{margin-bottom:25px}input,textarea{font-size:1em;font-family:Georgia,Times,"Times New Roman",serif;padding:3px}:focus{outline:none}form label{cursor:pointer}option{padding:1px 2px}table{border-collapse:collapse;border-spacing:0;margin-bottom:25px}th,td{text-align:left}hr{margin-bottom:25px}img.wp-smiley{max-height:12px;margin:0;padding:0;border:none}.gallery{display:block;text-align:center;margin-bottom:25px !important}.alignleft,.left{float:left;margin-right:20px}.alignright,.right{float:right;margin-left:20px}.aligncenter,.center{display:block;margin:0 auto 25px auto}.alignnone,.block{clear:both;margin:0 0 25px 0}.clear{clear:both}img.alignleft,img.alignright{display:inline}blockquote.alignleft,blockquote .alignright{width:33%}
+html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;vertical-align:baseline;outline:none;font-size:100%;background:transparent;border:none;text-decoration:none}b,i,hr,u,center,menu,layer,s,strike,font,xmp{margin:0;padding:0;vertical-align:baseline;outline:none;font-size:100%;font-weight:normal;font-style:normal;background:transparent;border:none;text-decoration:none}font{color:#333}center{text-align:left}body{line-height:25px;font-family:Georgia,Times,"Times New Roman",serif;color:#333;background:#fff}h1,h2,h3,h4,h5,h6{font-style:normal;font-weight:normal;margin:0 0 25px 0}h1{font-size:1.8em}h2{font-size:1.7em}h3{font-size:1.55em}h4{font-size:1.4em}h5{font-size:1.25em}h6{font-size:1.1em}p{margin:0 0 25px 0}ol,ul{list-style:none}ul{list-style:disc;margin:0 0 25px 2.5em}ol{list-style-type:decimal;margin:0 0 25px 3em}ol ol{list-style:upper-roman}ol ol ol{list-style:lower-roman}ol ol ol ol{list-style:upper-alpha}ol ol ol ol ol{list-style:lower-alpha}ul ul,ol ol,ul ol,ol ul{margin-bottom:0}dl{margin:0 0 25px 5px}dl dt{font-weight:bold;margin:10px 0 0 0}dl dd{margin:5px 0 0 1.5em}strong{font-weight:bold}strong strong{font-weight:normal}em,cite{font-style:italic}em em,cite cite{font-style:normal}abbr{cursor:help}acronym{text-transform:uppercase;border-bottom:1px dashed #666;cursor:help}big{font-size:120%}small,sup,sub{font-size:80%}sup{vertical-align:baseline;position:relative;bottom:0.3em}sub{vertical-align:baseline;position:relative;top:0.3em}address{font-style:italic;margin:0 0 25px 0}li address,dd address{margin:0}blockquote{margin:0 25px;font-style:normal}blockquote em,blockquote cite{font-style:italic}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{cursor:pointer}a img{border:none}pre{overflow:auto;font:.9em Monaco,monospace,Courier,"Courier New";line-height:25px;margin-bottom:25px;padding:10px}code{font:.9em Monaco,monospace,Courier,"Courier New"}pre code{font-size:1em}ins,dfn{font-style:italic;text-decoration:none;border-bottom:1px solid #666}del{text-decoration:line-through}object{margin-bottom:25px}input,textarea{font-size:1em;font-family:Georgia,Times,"Times New Roman",serif;padding:3px}input[type="submit"]{cursor:pointer}:focus{outline:none}form label{cursor:pointer}option{padding:1px 2px}table{border-collapse:collapse;border-spacing:0;margin-bottom:25px}th,td{text-align:left}hr{margin-bottom:25px}img.wp-smiley{max-height:12px;margin:0;padding:0;border:none}.gallery{display:block;text-align:center;margin-bottom:25px}.alignleft,.left{float:left;margin-right:20px}.alignright,.right{float:right;margin-left:20px}.aligncenter,.center{display:block;margin:0 auto 25px auto}.alignnone,.block{clear:both;margin:0 0 25px 0}.clear{clear:both}img.alignleft,img.alignright{display:inline}blockquote.alignleft,blockquote .alignright{width:33%}
 
 /* Galleries. */
 .gallery{display:block;clear:both;overflow:hidden;margin:0 auto}.gallery .gallery-row{display:block;clear:both;overflow:hidden;margin:0}.gallery .gallery-item{overflow:hidden;float:left;margin:0;text-align:center;list-style:none;padding:0}.gallery .gallery-item img,.gallery .gallery-item img.thumbnail{max-width:89%;height:auto;padding:1%;margin:0 auto}.gallery-caption{margin-left:0}.col-0{width:100%}.col-1{width:100%}.col-2{width:50%}.col-3{width:33.33%}.col-4{width:25%}.col-5{width:20%}.col-6{width:16.66%}.col-7{width:14.28%}.col-8{width:12.5%}.col-9{width:11.11%}.col-10{width:10%}.col-11{width:9.09%}.col-12{width:8.33%}.col-13{width:7.69%}.col-14{width:7.14%}.col-15{width:6.66%}.col-16{width:6.25%}.col-17{width:5.88%}.col-18{width:5.55%}.col-19{width:5.26%}.col-20{width:5%}.col-21{width:4.76%}.col-22{width:4.54%}.col-23{width:4.34%}.col-24{width:4.16%}.col-25{width:4%}.col-26{width:3.84%}.col-27{width:3.7%}.col-28{width:3.57%}.col-29{width:3.44%}.col-30{width:3.33%}
@@ -29,7 +29,7 @@ div.menu ul{margin:0;padding:0;list-style:none;line-height:1.0}div.menu ul ul{po
 **************************************/
 
 /* Links */
-a {
+a, a code {
 	color: #04648d;
 	}
 a:hover {
@@ -193,7 +193,7 @@ textarea {
 
 /* Images in post content. */
 
-.entry-content img {
+.hentry img, .gallery img {
 	max-width: 570px;
 	height: auto;
 	padding: 4px;
@@ -263,14 +263,20 @@ img.wp-smiley {
 	}
 
 /* Galleries [gallery] */
+.gallery {
+	margin-bottom: 15px;
+	}
 .gallery img {
 	margin-bottom: 0;
+	}
+.gallery .gallery-item {
+	margin-bottom: 5px;
 	}
 .gallery-caption {
 	font: normal normal normal 13px/25px Arial, Verdana, sans-serif;
 	color: #999;
 	}
-.singular-attachment .hentry .gallery-caption {
+.singular-attachment .hentry .gallery-caption, .singular-attachment .attachment-meta .gallery-caption {
 	display: none; /* Hide captions in gallery on attachment pages. This is a theme feature. */
 	}
 
@@ -279,6 +285,7 @@ img.wp-smiley {
 **************************************/
 
 #header {
+	overflow: hidden;
 	width: 100%;
 	height: 60px;
 	padding: 20px 0;
@@ -290,11 +297,14 @@ img.wp-smiley {
 	margin: 0 auto;
 	}
 
+#branding {
+	width: 350px;
+	}
+
 /* Site title */
 #site-title {
 	position: relative;
 	z-index: 99;
-	width: 300px;
 	margin: 0 0 5px 0;
 	letter-spacing: 1px;
 	font: normal normal normal 36px/36px ChunkFiveRoman, Georgia, Times, 'Times New Roman', serif;
@@ -310,7 +320,6 @@ img.wp-smiley {
 #site-description {
 	position: relative;
 	z-index: 99;
-	width: 300px;
 	margin: 0;
 	font: italic normal normal 15px/25px Georgia, Times, 'Times New Roman', serif;
 	color: #ce3000;
@@ -448,7 +457,7 @@ img.wp-smiley {
 
 /* Post container */
 .hentry {
-	overflow: hidden;
+	position: relative;
 	margin: 0 0 25px 0;
 	padding: 20px 20px 0 20px;
 	background: #fefefe;
@@ -469,7 +478,7 @@ img.wp-smiley {
 	font: normal normal normal 20px/25px ChunkFiveRoman, Georgia, Times, 'Times New Roman', serif;
 	margin: 0 0 5px 0;
 	}
-.singular .entry-title {
+.singular .entry-title, .error-404 .entry-title {
 	margin-bottom: 25px;
 	font-size: 25px;
 	}
@@ -527,6 +536,40 @@ img.wp-smiley {
 	background: #f2ede2;
 	border-bottom: 1px solid #ccc;
 	text-decoration: none;
+	}
+
+/* Image meta */
+.attachment-meta {
+	overflow: hidden;
+	margin: 0 0 25px 0;
+	padding: 20px 20px 0 20px;
+	background: #fefefe;
+	border: 5px solid #e7e1d4;
+	-moz-box-shadow: 3px 5px 5px #999;
+	-webkit-box-shadow: 3px 5px 5px #999;
+	box-shadow: 3px 5px 5px #999;
+	}
+.attachment-meta .image-gallery {
+	width: 60%;
+	float: right;
+	}
+.attachment-meta .image-info {
+	width: 33%;
+	float: left;
+	}
+.attachment-meta .image-info li {
+	font-size: 14px;
+	font-style: italic;
+	color: #999;
+	}
+.image-info .prep {
+	font: normal normal bold 14px Arial, Verdana, sans-serif;
+	text-transform: uppercase;
+	color: #04648d;
+	}
+.image-info .image-data {
+	float: right;
+	text-align: right;
 	}
 
 /**
@@ -679,6 +722,21 @@ img.wp-smiley {
 	font-size: 18px;
 	}
 
+/* Calendar widget */
+#wp-calendar a { /* WP needs to fix this ID issue. */
+	font-size: .9em;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	color: #ce3000;
+	}
+#wp-calendar #next a, #wp-calendar #prev a {
+	font-size: 1em;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-weight: normal;
+	color: #04648d;
+	}
+	
+
 /* Search widget */
 .widget-search {
 	padding: 25px !important;
@@ -703,6 +761,9 @@ img.wp-smiley {
 	}
 .widget-search input[type="submit"], .widget-search label {
 	display: none;
+	}
+.error-404 .hentry .search-form {
+	margin-bottom: 25px;
 	}
 
 /**
