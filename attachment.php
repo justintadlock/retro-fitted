@@ -66,7 +66,7 @@ get_header(); // Loads the header.php template. ?>
 
 							<?php retro_fitted_image_info(); ?>
 
-							<?php $gallery = do_shortcode( sprintf( '[gallery id="%1$s" exclude="%2$s" columns="7"]', $post->post_parent, get_the_ID() ) ); ?>
+							<?php $gallery = do_shortcode( sprintf( '[gallery id="%1$s" exclude="%2$s" columns="7" numberposts="21" orderby="rand"]', $post->post_parent, get_the_ID() ) ); ?>
 
 							<?php if ( !empty( $gallery ) ) { ?>
 								<div class="image-gallery">
