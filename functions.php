@@ -80,9 +80,6 @@ function retro_fitted_theme_setup() {
 	add_filter( 'sidebars_widgets', 'retro_fitted_disable_sidebars' );
 	add_action( 'template_redirect', 'retro_fitted_one_column' );
 
-	/* Filter the comment form defaults. */
-	add_filter( 'comment_form_defaults', 'retro_fitted_comment_form_args', 11 );
-
 	/* Add classes to the comments pagination. */
 	add_filter( 'previous_comments_link_attributes', 'retro_fitted_previous_comments_link_attributes' );
 	add_filter( 'next_comments_link_attributes', 'retro_fitted_next_comments_link_attributes' );
@@ -100,17 +97,6 @@ function retro_fitted_breadcrumb_trail_args( $args ) {
 
 	/* Return the filtered arguments. */
 	return $args;
-}
-
-/**
- * Returns the current comments page.
- *
- * @since 0.1.0
- */
-function retro_fitted_get_current_comments_page() {
-	$cpage = get_query_var( 'cpage' );
-
-	return ( ( empty( $cpage ) ) ? 1 : absint( $cpage ) );
 }
 
 /**
@@ -171,16 +157,6 @@ function retro_fitted_disable_sidebars( $sidebars_widgets ) {
 	}
 
 	return $sidebars_widgets;
-}
-
-/**
- * Creates custom settings for the WordPress comment form.
- *
- * @since 0.1.0
- */
-function retro_fitted_comment_form_args( $args ) {
-	$args['label_submit'] = __( 'Post Comment' ); // Use the default WP translation.
-	return $args;
 }
 
 /**
