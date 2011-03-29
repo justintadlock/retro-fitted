@@ -804,7 +804,7 @@ img.wp-smiley {
 	}
 
 /* Comment list. */
-.comment-list, .comment-list ol {
+.comment-list, .comment-list ol.children {
 	list-style: none;
 	margin: 0;
 	}

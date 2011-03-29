@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Retro-fitted WordPress Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-18 20:33-0600\n"
+"POT-Creation-Date: 2011-03-30 11:09-0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Justin Tadlock <justin@justintadlock.com>\n"
 "Language-Team:  <justin@justintadlock.com>\n"
@@ -796,39 +796,39 @@ msgstr ""
 msgid "Next &raquo;"
 msgstr ""
 
-#: library/extensions/theme-layouts.php:117
+#: library/extensions/theme-layouts.php:120
 msgid "Default"
 msgstr ""
 
-#: library/extensions/theme-layouts.php:118
+#: library/extensions/theme-layouts.php:121
 msgid "One Column"
 msgstr ""
 
-#: library/extensions/theme-layouts.php:119
+#: library/extensions/theme-layouts.php:122
 msgid "Two Columns, Left"
 msgstr ""
 
-#: library/extensions/theme-layouts.php:120
+#: library/extensions/theme-layouts.php:123
 msgid "Two Columns, Right"
 msgstr ""
 
-#: library/extensions/theme-layouts.php:121
+#: library/extensions/theme-layouts.php:124
 msgid "Three Columns, Left"
 msgstr ""
 
-#: library/extensions/theme-layouts.php:122
+#: library/extensions/theme-layouts.php:125
 msgid "Three Columns, Right"
 msgstr ""
 
-#: library/extensions/theme-layouts.php:123
+#: library/extensions/theme-layouts.php:126
 msgid "Three Columns, Center"
 msgstr ""
 
-#: library/extensions/theme-layouts.php:157
+#: library/extensions/theme-layouts.php:160
 msgid "Layout"
 msgstr ""
 
-#: library/extensions/theme-layouts.php:182
+#: library/extensions/theme-layouts.php:185
 msgid "Layout is a theme-specific structure for the single view of the post."
 msgstr ""
 
@@ -879,30 +879,30 @@ msgstr ""
 msgid "Post Comment"
 msgstr ""
 
-#: library/functions/context.php:372
-#: library/functions/context.php:378
-#: library/functions/context.php:381
-#: library/functions/context.php:387
-#: library/functions/context.php:390
+#: library/functions/context.php:382
+#: library/functions/context.php:388
+#: library/functions/context.php:391
+#: library/functions/context.php:397
+#: library/functions/context.php:400
 #, php-format
 msgid "Archive for %1$s"
 msgstr ""
 
-#: library/functions/context.php:375
+#: library/functions/context.php:385
 #, php-format
 msgid "Archive for minute %1$s"
 msgstr ""
 
-#: library/functions/context.php:381
+#: library/functions/context.php:391
 msgid "F jS, Y"
 msgstr ""
 
-#: library/functions/context.php:384
+#: library/functions/context.php:394
 #, php-format
 msgid "Archive for week %1$s of %2$s"
 msgstr ""
 
-#: library/functions/context.php:404
+#: library/functions/context.php:414
 #, php-format
 msgid "%1$s Page %2$s"
 msgstr ""
@@ -989,7 +989,7 @@ msgstr ""
 
 #: library/functions/shortcodes.php:279
 #: library/functions/shortcodes.php:282
-msgid "(No title)"
+msgid "(Untitled)"
 msgstr ""
 
 #: library/functions/shortcodes.php:300
