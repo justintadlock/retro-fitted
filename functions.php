@@ -20,7 +20,7 @@
  *
  * @package Retro-fitted
  * @subpackage Functions
- * @version 0.1.0
+ * @version 0.2.0
  * @author Justin Tadlock <justin@justintadlock.com>
  * @copyright Copyright (c) 2011, Justin Tadlock
  * @link http://themehybrid.com/themes/retro-fitted
@@ -50,9 +50,7 @@ function retro_fitted_theme_setup() {
 	add_theme_support( 'hybrid-core-sidebars', array( 'primary', 'secondary', 'before-content', 'after-content', 'after-singular' ) );
 	add_theme_support( 'hybrid-core-widgets' );
 	add_theme_support( 'hybrid-core-shortcodes' );
-	add_theme_support( 'hybrid-core-post-meta-box' );
-	add_theme_support( 'hybrid-core-theme-settings' );
-	add_theme_support( 'hybrid-core-meta-box-footer' );
+	add_theme_support( 'hybrid-core-theme-settings', array( 'about', 'footer' ) );
 	add_theme_support( 'hybrid-core-drop-downs' );
 	add_theme_support( 'hybrid-core-seo' );
 	add_theme_support( 'hybrid-core-template-hierarchy' );
@@ -75,6 +73,9 @@ function retro_fitted_theme_setup() {
 
 	/* Embed width/height defaults. */
 	add_filter( 'embed_defaults', 'retro_fitted_embed_defaults' );
+
+	/* Set the content width. */
+	hybrid_set_content_width( 580 );
 
 	/* Filter the sidebar widgets. */
 	add_filter( 'sidebars_widgets', 'retro_fitted_disable_sidebars' );
@@ -127,7 +128,7 @@ function retro_fitted_one_column() {
 	if ( !is_active_sidebar( 'primary' ) && !is_active_sidebar( 'secondary' ) )
 		add_filter( 'get_theme_layout', 'retro_fitted_theme_layout_one_column' );
 
-	elseif ( is_attachment() )
+	elseif ( is_attachment() && 'layout-default' == theme_layouts_get_layout() )
 		add_filter( 'get_theme_layout', 'retro_fitted_theme_layout_one_column' );
 }
 
@@ -202,7 +203,7 @@ function retro_fitted_image_info() {
 	$list = '';
 
 	/* Add the width/height to the $items array. */
-	$items['dimensions'] = sprintf( __( '<span class="prep">Dimensions:</span> %s', hybrid_get_textdomain() ), '<span class="image-data"><a href="' . wp_get_attachment_url() . '">' . sprintf( __( '%1$s &#215; %2$s pixels', hybrid_get_textdomain() ), $meta['width'], $meta['height'] ) . '</a></span>' );
+	$items['dimensions'] = sprintf( __( '<span class="prep">Dimensions:</span> %s', hybrid_get_textdomain() ), '<span class="image-data"><a href="' . esc_url( wp_get_attachment_url() ) . '">' . sprintf( __( '%1$s &#215; %2$s pixels', hybrid_get_textdomain() ), $meta['width'], $meta['height'] ) . '</a></span>' );
 
 	/* If a timestamp exists, add it to the $items array. */
 	if ( !empty( $meta['image_meta']['created_timestamp'] ) )
