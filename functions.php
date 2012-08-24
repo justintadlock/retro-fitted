@@ -75,9 +75,6 @@ function retro_fitted_theme_setup() {
 		)
 	);
 
-	/* Filter the breadcrumb trail arguments. */
-	add_filter( 'breadcrumb_trail_args', 'retro_fitted_breadcrumb_trail_args' );
-
 	/* Embed width/height defaults. */
 	add_filter( 'embed_defaults', 'retro_fitted_embed_defaults' );
 
@@ -91,20 +88,6 @@ function retro_fitted_theme_setup() {
 	/* Add classes to the comments pagination. */
 	add_filter( 'previous_comments_link_attributes', 'retro_fitted_previous_comments_link_attributes' );
 	add_filter( 'next_comments_link_attributes', 'retro_fitted_next_comments_link_attributes' );
-}
-
-/**
- * Custom breadcrumb trail arguments.
- *
- * @since 0.1.0
- */
-function retro_fitted_breadcrumb_trail_args( $args ) {
-
-	/* Change the text before the breadcrumb trail. */
-	$args['before'] = __( 'You are here:', 'retro-fitted' );
-
-	/* Return the filtered arguments. */
-	return $args;
 }
 
 /**
@@ -261,6 +244,14 @@ function retro_fitted_image_info() {
 
 	/* Display the image info and allow devs to overwrite the final output. */
 	echo apply_atomic( 'image_info', $output );
+}
+
+/**
+ * @since 0.1.0
+ * @deprecated 0.3.0
+ */
+function retro_fitted_breadcrumb_trail_args() {
+	_deprecated_function( __FUNCTION__, '0.3.0' );
 }
 
 ?>
