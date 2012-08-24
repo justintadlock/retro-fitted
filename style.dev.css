@@ -877,6 +877,7 @@ img.wp-smiley {
 
 /* Comment author */
 .comment-author {
+	display: block;
 	color: #666;
 	font: normal normal bold 16px/25px Georgia, Times, 'Times New Roman', serif;
 	}
