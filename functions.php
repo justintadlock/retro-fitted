@@ -94,7 +94,7 @@ function retro_fitted_theme_setup() {
 function retro_fitted_breadcrumb_trail_args( $args ) {
 
 	/* Change the text before the breadcrumb trail. */
-	$args['before'] = __( 'You are here:', hybrid_get_textdomain() );
+	$args['before'] = __( 'You are here:', 'retro-fitted' );
 
 	/* Return the filtered arguments. */
 	return $args;
@@ -203,27 +203,27 @@ function retro_fitted_image_info() {
 	$list = '';
 
 	/* Add the width/height to the $items array. */
-	$items['dimensions'] = sprintf( __( '<span class="prep">Dimensions:</span> %s', hybrid_get_textdomain() ), '<span class="image-data"><a href="' . esc_url( wp_get_attachment_url() ) . '">' . sprintf( __( '%1$s &#215; %2$s pixels', hybrid_get_textdomain() ), $meta['width'], $meta['height'] ) . '</a></span>' );
+	$items['dimensions'] = sprintf( __( '<span class="prep">Dimensions:</span> %s', 'retro-fitted' ), '<span class="image-data"><a href="' . esc_url( wp_get_attachment_url() ) . '">' . sprintf( __( '%1$s &#215; %2$s pixels', 'retro-fitted' ), $meta['width'], $meta['height'] ) . '</a></span>' );
 
 	/* If a timestamp exists, add it to the $items array. */
 	if ( !empty( $meta['image_meta']['created_timestamp'] ) )
-		$items['created_timestamp'] = sprintf( __( '<span class="prep">Date:</span> %s', hybrid_get_textdomain() ), '<span class="image-data">' . date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), $meta['image_meta']['created_timestamp'] ) . '</span>' );
+		$items['created_timestamp'] = sprintf( __( '<span class="prep">Date:</span> %s', 'retro-fitted' ), '<span class="image-data">' . date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), $meta['image_meta']['created_timestamp'] ) . '</span>' );
 
 	/* If a camera exists, add it to the $items array. */
 	if ( !empty( $meta['image_meta']['camera'] ) )
-		$items['camera'] = sprintf( __( '<span class="prep">Camera:</span> %s', hybrid_get_textdomain() ), '<span class="image-data">' . $meta['image_meta']['camera'] . '</span>' );
+		$items['camera'] = sprintf( __( '<span class="prep">Camera:</span> %s', 'retro-fitted' ), '<span class="image-data">' . $meta['image_meta']['camera'] . '</span>' );
 
 	/* If an aperture exists, add it to the $items array. */
 	if ( !empty( $meta['image_meta']['aperture'] ) )
-		$items['aperture'] = sprintf( __( '<span class="prep">Aperture:</span> %s', hybrid_get_textdomain() ), '<span class="image-data">' . sprintf( __( 'f/%s', hybrid_get_textdomain() ), $meta['image_meta']['aperture'] ) . '</span>' );
+		$items['aperture'] = sprintf( __( '<span class="prep">Aperture:</span> %s', 'retro-fitted' ), '<span class="image-data">' . sprintf( __( 'f/%s', 'retro-fitted' ), $meta['image_meta']['aperture'] ) . '</span>' );
 
 	/* If a focal length is set, add it to the $items array. */
 	if ( !empty( $meta['image_meta']['focal_length'] ) )
-		$items['focal_length'] = sprintf( __( '<span class="prep">Focal Length:</span> %s', hybrid_get_textdomain() ), '<span class="image-data">' . sprintf( __( '%s mm', hybrid_get_textdomain() ), $meta['image_meta']['focal_length'] ) . '</span>' );
+		$items['focal_length'] = sprintf( __( '<span class="prep">Focal Length:</span> %s', 'retro-fitted' ), '<span class="image-data">' . sprintf( __( '%s mm', 'retro-fitted' ), $meta['image_meta']['focal_length'] ) . '</span>' );
 
 	/* If an ISO is set, add it to the $items array. */
 	if ( !empty( $meta['image_meta']['iso'] ) )
-		$items['iso'] = sprintf( __( '<span class="prep">ISO:</span> %s', hybrid_get_textdomain() ), '<span class="image-data">' . $meta['image_meta']['iso'] . '</span>' );
+		$items['iso'] = sprintf( __( '<span class="prep">ISO:</span> %s', 'retro-fitted' ), '<span class="image-data">' . $meta['image_meta']['iso'] . '</span>' );
 
 	/* If a shutter speed is given, format the float into a fraction and add it to the $items array. */
 	if ( !empty( $meta['image_meta']['shutter_speed'] ) ) {
@@ -239,7 +239,7 @@ function retro_fitted_image_info() {
 			$shutter_speed = $meta['image_meta']['shutter_speed'];
 		}
 
-		$items['shutter_speed'] = sprintf( __( '<span class="prep">Shutter Speed:</span> %s', hybrid_get_textdomain() ), '<span class="image-data">' . sprintf( __( '%s sec', hybrid_get_textdomain() ), $shutter_speed ) . '</span>' );
+		$items['shutter_speed'] = sprintf( __( '<span class="prep">Shutter Speed:</span> %s', 'retro-fitted' ), '<span class="image-data">' . sprintf( __( '%s sec', 'retro-fitted' ), $shutter_speed ) . '</span>' );
 	}
 
 	/* Allow devs to overwrite the array of items. */
@@ -250,7 +250,7 @@ function retro_fitted_image_info() {
 		$list .= "<li>{$item}</li>";
 
 	/* Format the HTML output of the function. */
-	$output = '<div class="image-info"><h3>' . __( 'Image Info', hybrid_get_textdomain() ) . '</h3><ul>' . $list . '</ul></div>';
+	$output = '<div class="image-info"><h3>' . __( 'Image Info', 'retro-fitted' ) . '</h3><ul>' . $list . '</ul></div>';
 
 	/* Display the image info and allow devs to overwrite the final output. */
 	echo apply_atomic( 'image_info', $output );

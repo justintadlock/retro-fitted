@@ -39,7 +39,7 @@ get_header(); // Loads the header.php template. ?>
 							<?php the_excerpt(); ?>
 						</div><!-- .entry-summary -->
 
-						<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . sprintf( __( '[entry-published] &mdash; <code>%s</code>', hybrid_get_textdomain() ), get_permalink() ) . '</div>' ); ?>
+						<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . sprintf( __( '[entry-published] &mdash; <code>%s</code>', 'retro-fitted' ), get_permalink() ) . '</div>' ); ?>
 
 						<?php do_atomic( 'close_entry' ); // retro-fitted_close_entry ?>
 

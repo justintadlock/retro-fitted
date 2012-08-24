@@ -13,20 +13,20 @@
 	<?php if ( is_attachment() ) : ?>
 
 		<div class="loop-nav">
-			<?php previous_post_link( '%link', '<span class="previous">' . __( '&larr; Return to entry', hybrid_get_textdomain() ) . '</span>' ); ?>
+			<?php previous_post_link( '%link', '<span class="previous">' . __( '&larr; Return to entry', 'retro-fitted' ) . '</span>' ); ?>
 		</div><!-- .loop-nav -->
 
 	<?php elseif ( is_singular( 'post' ) ) : ?>
 
 
 		<div class="loop-nav">
-			<?php previous_post_link( '%link', '<span class="previous">' . __( '&larr; Previous', hybrid_get_textdomain() ) . '</span>' ); ?>
-			<?php next_post_link( '%link', '<span class="next">' . __( 'Next &rarr;', hybrid_get_textdomain() ) . '</span>' ); ?>
+			<?php previous_post_link( '%link', '<span class="previous">' . __( '&larr; Previous', 'retro-fitted' ) . '</span>' ); ?>
+			<?php next_post_link( '%link', '<span class="next">' . __( 'Next &rarr;', 'retro-fitted' ) . '</span>' ); ?>
 		</div><!-- .loop-nav -->
 
-	<?php elseif ( !is_singular() && current_theme_supports( 'loop-pagination' ) ) : loop_pagination( array( 'prev_text' => __( '&larr; Previous', hybrid_get_textdomain() ), 'next_text' => __( 'Next &rarr;', hybrid_get_textdomain() ) ) ); ?>
+	<?php elseif ( !is_singular() && current_theme_supports( 'loop-pagination' ) ) : loop_pagination( array( 'prev_text' => __( '&larr; Previous', 'retro-fitted' ), 'next_text' => __( 'Next &rarr;', 'retro-fitted' ) ) ); ?>
 
-	<?php elseif ( !is_singular() && $nav = get_posts_nav_link( array( 'sep' => '', 'prelabel' => '<span class="previous">' . __( '&larr; Previous', hybrid_get_textdomain() ) . '</span>', 'nxtlabel' => '<span class="next">' . __( 'Next &rarr;', hybrid_get_textdomain() ) . '</span>' ) ) ) : ?>
+	<?php elseif ( !is_singular() && $nav = get_posts_nav_link( array( 'sep' => '', 'prelabel' => '<span class="previous">' . __( '&larr; Previous', 'retro-fitted' ) . '</span>', 'nxtlabel' => '<span class="next">' . __( 'Next &rarr;', 'retro-fitted' ) . '</span>' ) ) ) : ?>
 
 		<div class="loop-nav">
 			<?php echo $nav; ?>
