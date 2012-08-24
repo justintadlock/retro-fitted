@@ -12,14 +12,12 @@
 
 	<?php if ( is_home() && !is_front_page() ) : ?>
 
-		<?php global $wp_query; ?>
-
 		<div class="loop-meta">
 
-			<h1 class="loop-title"><?php echo get_post_field( 'post_title', $wp_query->get_queried_object_id() ); ?></h1>
+			<h1 class="loop-title"><?php echo get_post_field( 'post_title', get_queried_object_id() ); ?></h1>
 
 			<div class="loop-description">
-				<?php echo apply_filters( 'the_excerpt', get_post_field( 'post_excerpt', $wp_query->get_queried_object_id() ) ); ?>
+				<?php echo apply_filters( 'the_excerpt', get_post_field( 'post_excerpt', get_queried_object_id() ) ); ?>
 			</div><!-- .loop-description -->
 
 		</div><!-- .loop-meta -->
