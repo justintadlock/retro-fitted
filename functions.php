@@ -137,7 +137,6 @@ function retro_fitted_theme_layout_one_column( $layout ) {
  * @since 0.1.0
  */
 function retro_fitted_disable_sidebars( $sidebars_widgets ) {
-	global $wp_query;
 
 	if ( current_theme_supports( 'theme-layouts' ) ) {
 
