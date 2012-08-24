@@ -66,7 +66,14 @@ function retro_fitted_theme_setup() {
 
 	/* Add theme support for WordPress features. */
 	add_theme_support( 'automatic-feed-links' );
-	add_custom_background();
+
+	/* Add support for a custom background. */
+	add_theme_support( 
+		'custom-background',
+		array(
+			'default-image' => trailingslashit( get_template_directory_uri() ) . 'images/bg.jpg',
+		)
+	);
 
 	/* Filter the breadcrumb trail arguments. */
 	add_filter( 'breadcrumb_trail_args', 'retro_fitted_breadcrumb_trail_args' );
