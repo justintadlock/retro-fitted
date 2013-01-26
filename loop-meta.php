@@ -50,7 +50,7 @@
 
 		<div class="loop-meta">
 
-			<h1 class="loop-title"><?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $term->name; ?></h1>
+			<h1 class="loop-title"><?php single_term_title(); ?></h1>
 
 			<div class="loop-description">
 				<?php echo term_description( '', get_query_var( 'taxonomy' ) ); ?>
@@ -88,7 +88,7 @@
 
 			<div class="loop-description">
 				<p>
-				<?php printf( __( 'You are browsing the search results for &quot;%1$s&quot;', 'retro-fitted' ), esc_attr( get_search_query() ) ); ?>
+				<?php printf( __( 'You are browsing the search results for "%s"', 'retro-fitted' ), esc_attr( get_search_query() ) ); ?>
 				</p>
 			</div><!-- .loop-description -->
 
@@ -107,7 +107,7 @@
 
 		</div><!-- .loop-meta -->
 
-	<?php elseif ( function_exists( 'is_post_type_archive' ) && is_post_type_archive() ) : ?>
+	<?php elseif ( is_post_type_archive() ) : ?>
 
 		<?php $post_type = get_post_type_object( get_query_var( 'post_type' ) ); ?>
 
@@ -116,7 +116,7 @@
 			<h1 class="loop-title"><?php post_type_archive_title(); ?></h1>
 
 			<div class="loop-description">
-				<?php if ( !empty( $post_type->description ) ) echo "<p>{$post_type->description}</p>"; ?>
+				<?php if ( !empty( $post_type->description ) ) echo wpautop( $post_type->description ); ?>
 			</div><!-- .loop-description -->
 
 		</div><!-- .loop-meta -->
